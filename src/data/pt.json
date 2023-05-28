@@ -1,0 +1,27 @@
+
+{
+    "developer": "Eu sou desenvolvedor",
+    "description_banner": "Olá! Este é o meu portfólio de desenvolvedor. Neste espaço, eu compartilho alguns dos projetos em que trabalhei ao longo da minha carreira como desenvolvedor de software. Cada projeto apresenta um desafio que enfrentei e como o resolvi usando minhas habilidades técnicas. Se você quiser saber mais sobre o meu trabalho ou precisar de um desenvolvedor para um novo projeto, por favor, não hesite em me contatar.",
+    "about": "Sobre mim",
+    "myportfolio": "Meu Portfólio",
+    "seework": "Veja meu trabalho",
+    "description_about": "Como desenvolvedor especializado em React e React Native, minha principal missão é criar aplicações de alta qualidade, aderindo às melhores práticas do clean code. Com minha experiência, tenho a capacidade de transformar conceitos e designs em interfaces interativas e responsivas, garantindo uma experiência de usuário excepcional. Ao adotar as diretrizes do clean code, meu objetivo é desenvolver código legível, modular e de fácil manutenção. Sigo princípios como a separação de responsabilidades, escrever funções e componentes concisos e com nomes descritivos. A minha personalidade é marcada pela tranquilidade, pela curiosidade e pelo altruísmo. Gosto de aprender coisas novas e de contribuir para o sucessos dos outros.",
+    "yearsof": "Anos de",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "completed": "Completados",
+    "what":"Oque eu Faço",
+    "description_services":"Como desenvolvedor React e React Native, meu foco é criar sites de alta qualidade que sejam responsivos e visualmente envolventes.",
+    "Landing page": "Uma landing page interativa e responsiva é uma poderosa ferramenta de marketing que combina design atraente, recursos interativos e capacidade de adaptação a diferentes dispositivos. Ela oferece uma experiência envolvente e amigável ao usuário, permitindo que os visitantes interajam de maneira intuitiva e eficaz",
+    "Website": "Um website direto e profissional é uma representação online da sua marca ou negócio que transmite confiança, clareza e profissionalismo aos visitantes. É um ponto de contato crucial para os usuários, onde eles podem obter informações sobre seus produtos, serviços ou conteúdos relevantes.",
+    "App android": "Eu posso criar uma aplicação mobile interativa e responsiva que combina design atraente, recursos interativos e capacidade de adaptação a diferentes dispositivos. Você pode escolher o estilo, as cores, as funcionalidades e o conteúdo da sua aplicação. Eu também posso oferecer minha opinião profissional sobre qual seria a melhor e mais eficiente abordagem para o seu projeto.",
+    "mylatestwork":"Meus ultimos trabalhos",
+    "viewallprojects": "Veja todos os projetos",
+    "beshy":"Nâo se acanhe",
+    "letsworktogether": "Vamos trabalhar juntos",
+    "sendmessage": "Enviar menssagem",
+    "yourname": "Seu nome",
+    "youremail": "Seu email",
+    "yourmessage": "Sua menssagem"
+}
+  
