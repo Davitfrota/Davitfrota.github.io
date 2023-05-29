@@ -82,9 +82,11 @@ const Banner = () => {
               <Link to='about' className='btn'>
                 {t("about")}
               </Link>
-              <button href='#' className='btn'>
-                {t("myportfolio")}
-              </button>
+              <a href={Github}>
+                <button  className='btn'>
+                  {t("myportfolio")}
+                </button>
+              </a>
             </motion.div>
             <motion.div
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 text-color'>
