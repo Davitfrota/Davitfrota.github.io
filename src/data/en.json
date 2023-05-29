@@ -22,6 +22,10 @@
     "sendmessage": "Send a message",
     "yourname": "Your nome",
     "youremail": "Your email",
-    "yourmessage": "Your message"
+    "yourmessage": "Your message",
+    "emailsent": "Email sent successfully!",
+    "failemail": "Failed to send email!",
+    "emptyfield": "Fill in the empty field!",
+    "emailinvalid": "This email is invalid!"
   }
   

@@ -9,7 +9,7 @@ import i18n, { changeLanguage } from 'i18next';
 
 i18n.init({
   interpolation: { escapeValue: false }, // opcional, se você precisar de escape chars
-  lng: localStorage.getItem('language')|| 'en', // idioma padrão
+  lng: localStorage.getItem('language') || 'en', // idioma padrão
   resources: {
     en: {
       translation: require('../src/data/en.json'),

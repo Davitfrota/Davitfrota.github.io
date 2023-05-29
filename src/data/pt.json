@@ -22,6 +22,10 @@
     "sendmessage": "Enviar menssagem",
     "yourname": "Seu nome",
     "youremail": "Seu email",
-    "yourmessage": "Sua menssagem"
+    "yourmessage": "Sua menssagem",
+    "emailsent": "Email enviado com sucesso!",
+    "failemail": "Email não foi enviado! Se o problema persistir tente mais tarde!",
+    "emptyfield": "Preencha os campos vazios!",
+    "emailinvalid": "Email inserido é inválido!"
 }
   

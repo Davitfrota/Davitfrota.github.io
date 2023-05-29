@@ -36,7 +36,7 @@ const About = () => {
             initial='hidden'
             whileInView={'show'}
             viewport={{once: false, amount: 0.3}}
-            className='flex-1 lg:bg-about1  bg-contain text-color bg-no-repeat h-[640px]
+            className='flex-1 lg:bg-about2  bg-contain text-color bg-no-repeat h-[640px]
             bg-top'
           >
           </motion.div>
@@ -70,7 +70,7 @@ const About = () => {
               repeat={Infinity}
               />
             </motion.div> 
-            <p className='mb-6 text-color text-sm lg:text-base font-semibold'>
+            <p className='mb-6 text-color text-sm lg:text-lg font-semibold'>
               {t("description_about")}
             </p>
             <div className='flex gap-x-6 lg:gap-x-10 mb-12 justify-center'>

@@ -42,7 +42,7 @@ const Contact = () => {
     }
 
     if(email === '' || name === '' || message === ''){
-      toast.error('Fill in the empty field');
+      toast.error(t("emptyfield"));
       return;
     }
     else if(validateEmail()){
@@ -56,14 +56,15 @@ const Contact = () => {
   
       emailjs.send("service_4ldxn73","template_ge986ki",templateParams,"t-ZUm3wiHRfJ0Aod0")
       .then((response) => {
-        toast.success("Email sent successfully")
+        toast.success(t("emailsent"))
         setName('')
         setEmail('')
         setMessage('')
       }, (err) => {
-        toast.error("Failed to send email");
+        toast.error(t("failemail"));
     });
   }
+    toast.warn(t("emailinvalid"))
    
    
  }

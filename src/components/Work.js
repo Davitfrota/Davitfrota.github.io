@@ -46,15 +46,15 @@ const Work = () => {
                 <button className='btn btn-sm'>{t("viewallprojects")}</button>
               </a>
             </div>
-            <div className=' flex flex-row'>
+            <div className=' flex lg:flex-row flex-col lg:justify-center lg:items-start'>
               <div >
-                <div className='group relative overflow-hidden w-60  mr-2 '>
+                <div className='group relative overflow-hidden mb-2 '>
                   
-                  <div className='group-hover:bg-black/70 w-full h-full absolute
+                  <div className='group-hover:bg-black/70 w-full  h-full absolute
                 z-40 transition-all duration-300'></div>
 
                   <div className=''>
-                    <img className='group-hover:scale-125 transition-all duration-500 border-4 rounded-3xl border-color'
+                    <img className='group-hover:scale-125 transition-all w-full duration-500 border-4 rounded-3xl border-color'
                       src={WeatherLogo}
                       alt=''
                     />
@@ -72,7 +72,7 @@ const Work = () => {
 
                 </div>
               </div>
-                <div className='w-[200px] h-[64]'>
+                <div className='w-full lg:w-2/3'>
                   <video
                     controls={isPlaying} 
                     onMouseEnter={handleMouseEnter}
@@ -92,27 +92,29 @@ const Work = () => {
             viewport={{once: false, amount: 0.3}}
             className='flex-1 flex flex-col gap-y-10'>
             <div className=' flex flex-row h-full justify-center items-end'>
-              <div className=' flex flex-row'>
-                <div className='group relative overflow-hidden w-60 h-60 mr-2'>
-                  
-                  <div className='group-hover:bg-black/70 w-full h-full absolute
-                z-40 transition-all duration-300'></div>
+              <div className=' flex lg:flex-row flex-col '>
+                <div>
+                  <div className='group relative overflow-hidden  mb-2'>
+                    
+                    <div className='group-hover:bg-black/70 w-full h-full absolute
+                  z-40 transition-all duration-300'></div>
 
-                  <img className='group-hover:scale-125 transition-all duration-500 border-4 rounded-3xl border-color'
-                      src={QuicklyNoteLogo}
-                      alt=''
-                  />
-                  <div className='absolute -bottom-full left-14 group-hover:bottom-24 
-                  transition-all duration-500 z-50  '>
-                    <span className='text-gradient'>React Native</span>
+                    <img className='group-hover:scale-125 transition-all w-full duration-500 border-4 rounded-3xl border-color'
+                        src={QuicklyNoteLogo}
+                        alt=''
+                    />
+                    <div className='absolute -bottom-full left-14 group-hover:bottom-24 
+                    transition-all duration-500 z-50  '>
+                      <span className='text-gradient'>React Native</span>
+                    </div>
+                    
+                    <div className='absolute -bottom-full left-12 group-hover:bottom-14 
+                    transition-all duration-700 z-50'>
+                      <span className=' text-3xl text-white'>QuicklyNote</span>
+                    </div>
                   </div>
-                  
-                  <div className='absolute -bottom-full left-12 group-hover:bottom-14 
-                  transition-all duration-700 z-50'>
-                    <span className=' text-3xl text-white'>QuicklyNote</span>
-                  </div>
-                </div>  
-                <div className='w-[200px] h-[64]'>
+                </div>
+                <div className='w-full lg:w-2/3 '>
                 <video
                     controls={isPlaying} 
                     onMouseEnter={handleMouseEnter}
