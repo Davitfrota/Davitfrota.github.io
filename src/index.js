@@ -4,18 +4,19 @@ import './index.css';
 import App from './App';
 import { I18nextProvider } from 'react-i18next';
 import i18n, { changeLanguage } from 'i18next';
-var language;
 
-if(localStorage.getItem('language') === 'pt' ){
-      language = localStorage.getItem('language');
-}
-else{
-      language = 'en';
-}
+// var language;
+
+// if(localStorage.getItem('language') === 'pt' ){
+//       language = localStorage.getItem('language');
+// }
+// else{
+//       language = 'en';
+// }
 
 i18n.init({
   interpolation: { escapeValue: false }, // opcional, se você precisar de escape chars
-  lng: language, // idioma padrão
+  lng: 'en', // idioma padrão
   resources: {
     en: {
       translation: require('../src/data/en.json'),
@@ -27,13 +28,13 @@ i18n.init({
 });
 
 
-// const idiomaNavegador = window.navigator.language;
-//   if(idiomaNavegador === 'pt-BR'){
-//     i18n.changeLanguage('pt')
-//   }
-//   else{
-//     i18n.changeLanguage('en');
-//   }
+const idiomaNavegador = window.navigator.language;
+  if(idiomaNavegador === 'pt-BR'){
+    i18n.changeLanguage('pt')
+  }
+  else{
+    i18n.changeLanguage('en');
+  }
   
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

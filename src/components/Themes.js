@@ -13,6 +13,7 @@ const getStorageColor = () =>{
     }
     return color;
 }
+  
 
 const getStorageTheme = () =>{
     let theme = 'light-theme';
@@ -22,9 +23,17 @@ const getStorageTheme = () =>{
     }
     return theme;
 }
-var currentLanguage = localStorage.getItem('language');
+// var currentLanguage = localStorage.getItem('language');
 
-
+var currentLanguage;
+const idiomaNavegador = window.navigator.language;
+  if(idiomaNavegador === 'pt-BR'){
+        currentLanguage = 'pt'
+  }
+  else{
+        currentLanguage = 'en'
+  }
+  
 const Themes = () => {
     const [ showSwitcher, setShowSwitcher] = useState(false)
     const [ color, setColor] = useState(getStorageColor())
@@ -68,9 +77,7 @@ const Themes = () => {
         localStorage.setItem('theme', theme);
     }, [theme])
 
-    useEffect(() => {
-        localStorage.setItem('language', language);
-      }, [i18n.language]);
+    
 
   return (
     <div>
@@ -81,21 +88,23 @@ const Themes = () => {
             >
                 <FaCog/>
             </div>
-
-            <div className='theme__toggler' onClick={toggleTheme}>
-                {theme === 'light-theme' ?  <BsMoon/> : <BsSun/> }
+            <div className='flex flex-row w-full items-center justify-around border-b-2 border-x-stone-400 mb-2'>
+                <div className='btn' onClick={toggleTheme}>
+                    {theme === 'light-theme' ?  <BsMoon  /> : <BsSun/> }
+                </div>
+                
+                <div className='btn btn-sm mb-1 ' onClick={toggleLanguage}>
+                    {language === 'pt' 
+                        ?  
+                        <h1>PT</h1>
+                        : 
+                        <h1>EN</h1>
+                        }
+                </div>
             </div>
-            
-            <div className='language__toggler' onClick={toggleLanguage}>
-                {language === 'pt' 
-                    ?  
-                    <h1>PT</h1>
-                    : 
-                    <h1>EN</h1>
-                    }
+            <div className='w-full flex justify-center '>
+                <h3 className='style__switcher-title'>Style Switcher</h3>
             </div>
-
-            <h3 className='style__switcher-title'>Style Switcher</h3>
             <div className='style__switcher-items'>
                 {themes.map((theme,index) => {
                     return <ThemeItem key={index} {...theme} changeColor={changeColor}/>;

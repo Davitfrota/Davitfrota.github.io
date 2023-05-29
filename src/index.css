@@ -144,9 +144,17 @@
 .style__switcher-title{
   font-size: 22px;
   font-weight: bold;
-  border-bottom: 1px solid hsl(0, 0%, 87%);
   padding-bottom: 5px;
   margin-bottom: 15px;
+}
+.style__switcher-toggler-intern{
+  background-color: var(--first-color);
+  height:  50px;
+  width: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 5px;
+  box-shadow: 0 0 2px hsl(0, 0%, 80%);
 }
 
 .theme__img{
@@ -166,7 +174,6 @@
   cursor: pointer;
   display: grid;
   place-items: center;
-  opacity: 0.2;
   box-shadow: 0 0 2px hsl(0, 0%, 80%);
   transition: all 0.3s ease;
 }
@@ -209,6 +216,9 @@
   }
   .btn {
     @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-toggler {
+    @apply rounded-full text-white font-medium;
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 
 import CountUp from 'react-countup';
 
@@ -13,18 +13,28 @@ import { FaFileAlt } from 'react-icons/fa'
 import {TypeAnimation} from 'react-type-animation';
 
 import curriculum from '../assets/curriculum.pdf'
+import curriculo from '../assets/curriculo.pdf'
+
 import img from '../assets/about2.png'
 
 import { useTranslation } from 'react-i18next';
-
+import i18n from 'i18next';
 
 const About = () => {
+
+  const [language, setLanguage] = useState('')
+  
 
   const { t } = useTranslation();
 
   const {ref, inView} = useInView({
     threshold: 0.5
   });
+
+  useEffect(() => {
+        setLanguage(i18n.language);
+      }, [i18n.language]);
+
   return(
     <section className='section' id='about' ref={ref}>
       <div className='container mx-auto'>
@@ -94,6 +104,17 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 items-center justify-center'>
+              {language == 'pt' 
+                ?
+              <a href={curriculo} download>
+                <button className='btn_cv'>
+                  <h3 className='w-full btn'>Download CV</h3>
+                  <div className='flex'>
+                    <FaFileAlt size={20} color="#000" />
+                  </div>
+                </button>
+              </a>
+                :
               <a href={curriculum} download>
                 <button className='btn_cv'>
                   <h3 className='w-full btn'>Download CV</h3>
@@ -102,6 +123,7 @@ const About = () => {
                   </div>
                 </button>
               </a>
+              }
             </div>
           </motion.div>
         </div>
