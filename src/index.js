@@ -4,12 +4,18 @@ import './index.css';
 import App from './App';
 import { I18nextProvider } from 'react-i18next';
 import i18n, { changeLanguage } from 'i18next';
+var language;
 
-
+if(localStorage.getItem('language') === 'pt' ){
+      language = localStorage.getItem('language');
+}
+else{
+      language = 'en';
+}
 
 i18n.init({
   interpolation: { escapeValue: false }, // opcional, se você precisar de escape chars
-  lng: localStorage.getItem('language') || 'en', // idioma padrão
+  lng: language, // idioma padrão
   resources: {
     en: {
       translation: require('../src/data/en.json'),
